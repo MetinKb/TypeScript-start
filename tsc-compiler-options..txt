@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      ...
+    },
+    "exclude": [          File paths given in exclude are never compiled
+      "fileName.ts",      Single file determination
+      "*.dev.ts"          All files ending in dev.ts
+      "**/*.dev.ts"       All files ending in dev.ts in any folder
+      "node_modules"      Would be the default
+      ...
+    ],
+    "include": [          File paths to be compiled are given to include
+    "fileName.ts"         Single file determination
+    "ts/*.ts",            All files with ts extension in the ts folder
+      ...
+  ],
+  "files": [              Not all folders can be specified. The files to be compiled are written one by one. 
+     "fileName.ts"        Actually, this setting is not needed much.
+  ]
+  }
